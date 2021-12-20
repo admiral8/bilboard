@@ -1,0 +1,331 @@
+<style>
+	/*вот так ставятся комментарии внутри style*/
+	
+
+
+	.h1{
+		
+		background-color: none;
+		height: 50px;
+		width: 200px;
+	}
+	.h2{
+		
+		background-color: none;
+		height: 50px;
+		width: 500px;
+	}
+	.h3{
+	
+		background-color: none;
+		height: 50px;
+		width: 100px;
+	}
+
+	.acolor{
+
+		color: white
+
+	}
+
+	.header{
+		
+		background-color: gray;
+		height: 60px;
+	}
+
+	.charts{
+		background-color: none;
+		height: 1100px;
+		width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.headercen{
+		background-color: gray;
+		height: 60px;
+		width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.chartssort{
+		margin-top: 5px;
+		background-color: blue;
+		height: 100px;
+		width: 800px;
+		
+	}
+	.chartsup{
+		margin-top: 10px;
+		background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+		width: 800px;
+		border-radius: 10px;
+
+	}
+	.chartsnew{
+		margin-top: 10px;
+		background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+		height: 150px;
+		width: 800px;
+		border-radius: 10px;
+	}
+	.chartsdown{
+		margin-top: 10px;
+		background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+		height: 150px;
+		width: 800px;
+		border-radius: 10px;
+	}
+	.chartsrank{
+		
+		background: none;
+		height: 150px;
+		width: 100px;
+	}
+	.chartsinfo{
+		
+		background: none
+		height: 150px;
+		width: 400px;
+	}
+	.chartsbutton{
+
+		background: none
+		height: 150px;
+		width: 200px;
+		transition: 1s;
+
+	}
+	.chartsbuttons:hover{
+
+		color: black;
+		background-color:white;
+
+
+	}
+
+	.chartsimg{
+		
+		height: 150px;
+		width: 200px;
+		background: none;
+	}
+</style>
+<!-- 1 уровень. шапка -->
+<div class="header" >
+	<!-- 2 уровень. выравнивание шапки -->
+	<div class="headercen" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- лого -->
+		<div class="h1">
+			<img src="logo.png" style="height: 25px; width: 120px; margin-top: 15px;">
+		</div>
+		<!-- ссылки -->
+		<div style="margin-top: 25px;" class="acolor">
+			<a style="font-family: consolas; font-size: 15px;">CHARTS</a>
+			<a style="font-family: consolas; font-size: 15px; margin-left: 20px;">NEWS</a>
+			<a style="font-family: consolas; font-size: 15px; margin-left: 20px;">VIDEO</a>
+			<a style="font-family: consolas; font-size: 15px; margin-left: 20px;">PHOTOS</a>
+		</div>
+		<!-- кнопка подписаться -->
+		<div >
+			<button style="background-color: black; color: white; height: 30px; width: 100px; border: none; margin-left: 210px; margin-top: 20px; font-family: consolas; border-radius: 5px; font-size: 15px;" class="buttonre">subscribe</button>
+		</div>
+	</div>
+</div>
+
+<!-- 1 уровень. чат-контейнер -->
+<div class="charts">
+	<!-- 2 уровень -->
+	<!-- для кнопок сортировки -->
+	<div style="display: flex; margin-top: 10px;">
+		<button style="background-color: black; height: 30px; width: 100px; border: none; color: white; font-family: consolas; border-radius: 5px;">THIS WEEK</button>
+		<button style="background-color: black; height: 30px; width: 100px; border: none; color: white; font-family: consolas; margin-left: 10px; border-radius: 5px;">LAST WEEK</button>
+		<button style="background-color: black; height: 30px; width: 100px; border: none; color: white; font-family: consolas; margin-left: 10px; border-radius: 5px;">PEAK</button>
+		<button style="background-color: black; height: 30px; width: 100px; border: none; color: white; font-family: consolas; margin-left: 10px; border-radius: 5px;">DURATION</button>
+	</div>
+	<!--все треки в чарте -->
+
+	<!-- трек up -->
+	<div class="chartsup" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">1</h1>
+			<h4 style="color: green; text-align: center; font-family: consolas">UP</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">FUEGO</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">LOAT!</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;" class="buttonre">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(1.png); background-size: 100% 100%">
+			
+		</div>
+	</div>
+
+	<!-- трек new -->
+	<div class="chartsnew" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">2</h1>
+			<h4 style="color: yellow; text-align: center; font-family: consolas">NEW</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">99 Problems</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">kizaru, Big Baby Tape</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; width: 100px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(2.png); background-size: 100% 100%">
+			
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="chartsnew" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">3</h1>
+			<h4 style="color: yellow; text-align: center; font-family: consolas">NEW</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">DANCE!</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">1nonly, Ciscaux, Wassup Rocker</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; width: 100px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(3.png); background-size: 100% 100%">
+			
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="chartsup" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">4</h1>
+			<h4 style="color: green; text-align: center; font-family: consolas">UP</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">in a Hood Near You</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">IGARASHI KANTA</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; width: 100px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(4.png); background-size: 100% 100%">
+			
+		</div>		
+	</div>
+
+	<!-- трек down -->
+	<div class="chartsdown" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">5</h1>
+			<h4 style="color: red; text-align: center; font-family: consolas">DOWN</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">GOSHA</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">$NOT</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; width: 100px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Купить</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(5.png); background-size: 100% 100%">
+			
+		</div>		
+	</div>
+
+	<!-- трек new -->
+	<div class="chartsnew" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">6</h1>
+			<h4 style="color: yellow; text-align: center; font-family: consolas">NEW</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">MARCELINE</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">Lil God Dan</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(6.png); background-size: 100% 100%">
+			 
+		</div>		
+	</div>
+
+	<!-- трек up -->
+	<div class="chartsup" style="display: flex;">
+		<!-- 3 уровень -->
+		<!-- Место в чате -->
+		<div class="chartsrank">
+			<h1 style="color: white; text-align: center; font-family: consolas">7</h1>
+			<h4 style="color: green; text-align: center; font-family: consolas">UP</h4>
+		</div>
+		<!-- информация о треке -->
+		<div class="chartsinfo">
+			<h1 style="color: white; text-align: left; font-family: conssolas;">Timberlake</h1>
+			<h4 style="color: white; text-align: left; font-family: conssolas;">BONES, Juicy J</h4>
+		</div>
+		<!-- купить или воспроизвести -->
+		<div class="chartsbutton">
+			<button style="background-color: black; color: white; height: 30px; border-radius: 5px; border: none; margin-left: 30px; margin-top: 30px; font-family: consolas;">Воспроизвести</button>
+		</div>
+		<!-- картинка -->
+		<div class="chartsimg" style="background-image: url(7.png); background-size: 100% 100%">
+			
+		</div>		
+	</div>
+</div>
+<!--  
+1.Savage Love (Laxed - Siren Beat)
+Jaws 685 x Jason Derulo x BTS
+
+2.Dynamite
+BTS
+
+3.WAP
+Cardi B featuring Megan Thee Stallion
+
+4.Mood
+24kGoldn featuring iann dior
+
+5.Laugh Now Cry Later
+Drake featuring Lil Durk
+
+6.Blinding Lights
+The Weekend
+
+7.Rockstar
+DaBaby Featuring Roddy Ricch
+-->
